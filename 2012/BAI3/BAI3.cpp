@@ -44,7 +44,6 @@ int32_t main(){
 			h = i;
 		}
 	}
-	// ~O(n^3) vì m,n <= 50 nên vẫn pass
 	cout<<h<<" "<<r;
 	return 0;
 }

@@ -18,7 +18,9 @@ int32_t main(){
 	convert << hex << value;
 	s = convert.str();
 	for(int i = 0; i < (int)s.size(); ++i){
-		s[i] = s[i] + ('A' - 'a');
+		if(s[i] >= 'a' && s[i] <= 'z'){
+			s[i] = s[i] + ('A' - 'a');
+		}
 	}
 	cout<<s;
 	return 0;

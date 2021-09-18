@@ -5,7 +5,7 @@ using namespace std;
 int ans = 0;
 void process(vector<pair<int,int>> adj){
 	map<pair<int,int>,int> M;
-	unordered_map<int,int> T1, T2;
+	map<int,int> T1, T2;
 	for(int i = 0; i < (int)adj.size(); ++i){
 		int a = adj[i].first, b = adj[i].second;
 		M[adj[i]]++;

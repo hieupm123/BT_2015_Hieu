@@ -10,7 +10,7 @@ int32_t main(){
 	freopen("BAI1.OUT","w",stdout);
 	int n; cin>>n;
 	set<int> S;
-	unordered_map<int,int> unm;
+	map<int,int> unm;
 	vector<int> adj(n);
 	int ans = -inf;
 	for(int i = 0; i < n; ++i){

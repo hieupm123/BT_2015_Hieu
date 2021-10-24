@@ -19,7 +19,7 @@ int32_t main(){
 		int x1,y1,x2,y2; cin>>x1>>y1>>x2>>y2;
 		X.push_back(x1); Y.push_back(y1);
 		X.push_back(x2); Y.push_back(y2);
-		adj[i].in(x1,y1,x2,y2);
+		adj[i].in(min(x1,x2),min(y1,y2),max(x2,x1),max(y1,y2));
 	}
 	sort(X.begin(),X.end());
 	sort(Y.begin(),Y.end());
